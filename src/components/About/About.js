@@ -22,7 +22,7 @@ const About = () => {
               </p>
               <p data-aos="fade-up" data-aos-delay="200" className={styles.description}>
                 I'm Gowtham Sree, a passionate and adaptive developer with a strong focus on Artificial Intelligence,
-                 Machine Learning, and full-stack web development. With over X years of hands-on experience (update as needed), 
+                 Machine Learning, and full-stack web development. With over 1 year of hands-on experience, 
                 I enjoy building smart, efficient systems that blend logic with creativity.I specialize in crafting seamless 
                 digital experiences — from designing responsive front-end interfaces using React, Tailwind CSS, and TypeScript,
                  to developing scalable, intelligent back-end logic with Python, Node.js, and MongoDB.
