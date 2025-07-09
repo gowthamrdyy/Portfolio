@@ -55,8 +55,8 @@ export const projects = [
     description: "Porfolio",
     summary:"This is my personal portfolio website where I showcase my projects, skills, and experiences. It is built using HTML, CSS, and JavaScript, and it is designed to be responsive and user-friendly. The website includes sections for my projects, skills, about me, and contact information.",
     img: Portfolio,
-    link: "https://nhanng19.github.io/css_portfolio/develop/index",
-    source: "https://github.com/nhanng19/css_portfolio",
+    link: "https://gowthamrdyy.vercel.app/",
+    source: "https://github.com/gowthamrdyy/Portfolio",
     delay: "100",
   },
 ];
