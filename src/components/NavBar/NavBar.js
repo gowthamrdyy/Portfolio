@@ -81,12 +81,14 @@ const ResumeButton = styled.a`
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 500;
-  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   flex-shrink: 0;
   min-width: 80px;
@@ -139,7 +141,7 @@ const Navbar = () => {
           <TimeText>{formatTime(currentTime)}</TimeText>
         </LocationTimeContainer>
         <ResumeButton 
-          href="/resume.pdf" 
+          href="https://drive.google.com/file/d/1uDWIBqIDaT9CFTJAgSMaqJd9AaztoUU2/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer"
         >
