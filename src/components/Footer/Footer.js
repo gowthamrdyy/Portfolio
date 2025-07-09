@@ -84,7 +84,7 @@ const Footer = () => {
           <div className={styles.copyright}>
             <p>© {currentYear} Gowtham Sree Charan Reddy. All rights reserved.</p>
             <p className={styles.subCopyright}>
-              Designed and developed with ❤️ using React
+              Designed and developed with ❤️(prema) using Telisinantha
             </p>
           </div>
           <div className={styles.links}>
