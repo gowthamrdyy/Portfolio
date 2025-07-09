@@ -1,0 +1,193 @@
+.landing {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.photoOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 700px;
+  height: 700px;
+  overflow: hidden;
+  animation: popOpen 0.8s ease-out;
+}
+
+.overlayPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.65;
+  transition: all 0.5s ease;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.leftWrapper {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 300;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.name {
+  font-size: 60px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(45deg, #ffffff, #cccccc, #ffffff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 1s ease-out 1s both, gradientShift 3s ease-in-out infinite;
+  position: relative;
+  z-index: 4;
+}
+
+.description {
+  height: 50px;
+  font-size: 30px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  animation: fadeInUp 1s ease-out 1.5s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popOpen {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.titleItem {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 30px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .photoOverlay {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .landing {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .leftWrapper {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .intro {
+    font-size: 24px;
+  }
+  
+  .name {
+    font-size: 40px;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+  .photoOverlay {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .name {
+    font-size: 50px;
+  }
+  
+  .description {
+    font-size: 25px;
+  }
+}
+
+/* Large Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .photoOverlay {
+    width: 600px;
+    height: 600px;
+  }
+}
