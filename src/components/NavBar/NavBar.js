@@ -145,7 +145,7 @@ const Navbar = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          Řeșum̐e
+          résumé
         </ResumeButton>
       </RightSection>
     </Nav>
