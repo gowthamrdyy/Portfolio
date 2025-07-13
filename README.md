@@ -1,4 +1,4 @@
-# 🌐 Gowtham Sree Charan Reddy – Developer Portfolio
+# 🌐 Gowtham Sree Charan Reddy – Developer Portfolio!
 
 Welcome to the source code of my personal portfolio website!  
 Built to showcase my projects, skills, and journey as a passionate student developer with a focus on AI/ML and Frontend Engineering.
