@@ -14,7 +14,7 @@ Built to showcase my projects, skills, and journey as a passionate student devel
 - 🧰 Projects with live demo & GitHub links  
 - 🎨 Custom SVG animations and styled components  
 - 🌙 Dark mode support *(optional if added)*  
-- 🖥️ Built with **React**, **HTML**, **CSS**, **JavaScript**
+- 🖥️ Built with **React**, **HTML**, **CSS**, **JavaScript**, **React**, **TypeScript**
 
 ---
 
