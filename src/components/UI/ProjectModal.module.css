@@ -1,0 +1,110 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000;
+  overflow: hidden;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  flex: 1;
+}
+
+.leftWrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.titleItem {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.leftWrapper button {
+  align-self: flex-start;
+  width: 120px;
+
+  background-color: rgba(0, 0, 0, 0.001);
+  color: white;
+  border: solid 1px;
+}
+
+.img {
+  width: 100%;
+  transition: all 10s ease;
+  cursor: pointer;
+}
+
+.imgContainer {
+  height: 50vh;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    flex-direction: column;
+  }
+
+  .leftWrapper {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+    .titleItem {
+      font-size: 15px;
+    }
+
+  .description {
+    display: none;
+  }
+}
