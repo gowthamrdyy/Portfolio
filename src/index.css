@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+/* SMOOTH SCROLLING */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR STYLING */
+#nav-overall {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  color: whitesmoke;
+  background-color: black; 
+}
+
+#nav-div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-a {
+  position: relative;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(225, 220, 220);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-a:hover::after {
+  width: calc(100% - 20px);
+}
+
+/* Music */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Music Ends */
+
+/* HERO SECTION */
+.hero-section {
+  min-height: 75vh;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to bottom, #d4d4d4, #737373);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: whitesmoke; 
+}
+
+.typing-text {
+  font-weight: bold;
+  background: linear-gradient(
+    115deg,
+    #1f1f1f 0%,
+    #4b4b4b 30%,
+    #ffffff 50%,
+    #4b4b4b 70%,
+    #1f1f1f 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 250% 100%;
+  animation: shine 2.5s ease-in-out infinite;
+}
+
+/* SOCIAL ICONS */
+#social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.icon-circle {
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-circle::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 50%;
+  border-top: 1px solid rgb(210, 181, 181);
+  animation: spin 4.5s linear infinite;
+  z-index: 0;
+}
+
+/* ANIMATIONS */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ABOUT SECTION PLACEHOLDER */
+.coming-soon-text {
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    #888888,
+    #bcbcbc,
+    #ffffff,
+    #bcbcbc,
+    #888888
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 8s ease-in-out infinite;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 300% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 300% 0;
+  }
+}
+
+/* Skills Styling Starts*/
+
+/* Skills Styling Ends*/
+
+/* Enter Style */
+.shine-animation {
+  animation: shine 6s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { background-position: 200% 0; }
+  50% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+/* Enter Style ends */
+
+/* NAVBAR: Adjust gap for mobile */
+@media screen and (max-width: 768px) {
+  #nav-div {
+    gap: 0.8rem;
+  }
+
+  .hero-section {
+    padding: 0 0.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive heading for Skills */
+@media screen and (max-width: 640px) {
+  .skills-heading {
+    font-size: 2rem;
+  }
+}
+
+
+/* GLOBAL STYLES */
+html, body {
+  background-color: black;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke; 
+}
+
+/* For hiding scroll bar*/
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
