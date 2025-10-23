@@ -232,7 +232,23 @@ html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  color: whitesmoke; 
+  color: whitesmoke;
+  /* Enable smooth scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  /* Ensure body is scrollable */
+  position: relative;
+  width: 100%;
+}
+
+#root {
+  /* Ensure root div doesn't interfere with scrolling */
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* For hiding scroll bar*/

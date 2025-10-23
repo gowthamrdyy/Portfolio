@@ -8,13 +8,6 @@ const Contact = () => {
   const [sending, setSending] = useState(false);
   const [status, setStatus] = useState(null);
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
     setSending(true);
