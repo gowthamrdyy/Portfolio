@@ -1,0 +1,17 @@
+{
+  "name": "Gowtham Sree Charan Reddy - Machine Learning Developer Portfolio",
+  "short_name": "Gowtham Portfolio",
+  "description": "Passionate Developer specializing in AI/ML, Web Development, and Data Structures",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

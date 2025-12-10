@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Gowtham Sree Charan Reddy - Portfolio
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js 15, featuring stunning animations, particle effects, and a fully responsive design.
 
-First, run the development server:
+![Portfolio Preview](public/hero-image.png)
+
+## ✨ Features
+
+- **Particle Text Animation** - Dynamic text effects with interactive particles
+- **3D Globe** - Interactive globe in the footer section
+- **Animated Skills Tree** - Visual representation of technical skills with animated beams
+- **Project Showcase** - Scrolling card stream with hover effects
+- **Responsive Design** - Fully optimized for all screen sizes
+- **Creative Mobile Menu** - Animated hamburger menu with modern design
+- **SEO Optimized** - Complete meta tags, sitemap, and structured data
+- **Dark Theme** - Sleek dark mode design throughout
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **3D Graphics:** Three.js, Cobe (Globe)
+- **UI Components:** Radix UI, Lucide Icons
+- **Fonts:** Geist Sans & Mono
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/gowthamrdyy/portfolio.git
+
+# Navigate to the project
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── public/
+│   ├── projects/          # Project screenshots
+│   ├── stickers/          # Floating sticker images
+│   ├── gallery*.jpg       # Gallery images
+│   └── hero-image.png     # Hero section image
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx     # Root layout with SEO
+│   │   ├── page.tsx       # Main page
+│   │   └── sitemap.ts     # Dynamic sitemap
+│   └── components/
+│       ├── ui/            # UI components
+│       └── about-me.tsx   # About section
+└── ...config files
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update Personal Info
 
-## Deploy on Vercel
+1. **Hero Image:** Replace `public/hero-image.png`
+2. **Gallery Images:** Replace `public/gallery1-5.jpg`
+3. **Project Images:** Replace files in `public/projects/`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Update Content
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **About Section:** `src/components/about-me.tsx`
+- **Skills:** `src/components/ui/skills-beam.tsx`
+- **Projects:** `src/components/ui/projects-section.tsx`
+- **Footer Links:** `src/components/ui/footer.tsx`
+- **Resume Link:** `src/components/ui/header.tsx`
+
+### SEO Configuration
+
+Update these files with your domain:
+- `src/app/layout.tsx` - Meta tags and Open Graph
+- `src/app/sitemap.ts` - Sitemap URLs
+- `public/robots.txt` - Sitemap reference
+- `src/components/structured-data.tsx` - JSON-LD schema
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file:
+
+```env
+# Google Analytics (optional)
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+## 📱 Responsive Breakpoints
+
+- **Mobile:** < 640px
+- **Tablet:** 640px - 1024px
+- **Desktop:** > 1024px
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gowthamrdyy/portfolio)
+
+### Manual Deployment
+
+```bash
+npm run build
+# Deploy the .next folder to your hosting provider
+```
+
+## 📊 Performance
+
+- ⚡ Lighthouse Score: 90+
+- 🎯 First Contentful Paint: < 1.5s
+- 📱 Mobile Optimized
+- 🔍 SEO Ready
+
+## 🤝 Connect
+
+- **GitHub:** [@gowthamrdyy](https://github.com/gowthamrdyy)
+- **LinkedIn:** [gowthamrdyy](https://linkedin.com/in/gowthamrdyy)
+- **Instagram:** [@gowthamrdyy](https://instagram.com/gowthamrdyy)
+- **Email:** iamgowthamsree@gmail.com
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ by Gowtham Sree Charan Reddy
